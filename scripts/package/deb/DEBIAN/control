@@ -1,0 +1,14 @@
+{{VER=2.0.0}}
+Package: nordicenergy
+Version: {{ VER }}
+License: MIT
+Vendor: nordicenergy blockchain
+Architecture: amd64
+Source: https://github.com/nordicenergy/nordicenergy-core
+Maintainer: Leo Chen <leo@nordicenergy.net>
+Section: net
+Priority: extra
+Homepage: https://nordicenergy.net
+Description: nordicenergy is a sharded, fast finality, low fee, PoS public blockchain. This package contains the validator node program for nordicenergy blockchain.
+Build-Dep: dh-systemd
+Recommends: jq, rclnet (>= 1.52.3)

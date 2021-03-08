@@ -1,0 +1,4 @@
+/etc/nordicenergy/nordicenergy.conf
+/etc/nordicenergy/rclnet.conf
+/etc/sysctl.d/99-nordicenergy.conf
+/etc/systemd/system/nordicenergy.service

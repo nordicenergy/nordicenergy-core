@@ -1,0 +1,6 @@
+[nordicenergy-dev]
+name=Development Packages - $basearch
+baseurl=http://haochen-nordicenergy-pub.s3.amazonaws.com/pub/yum/$basearch/
+enabled=1
+gpgkey=https://raw.githubusercontent.com/nordicenergy/nordicenergy-open/master/nordicenergy-release/nordicenergy-pub.key
+gpgcheck=1

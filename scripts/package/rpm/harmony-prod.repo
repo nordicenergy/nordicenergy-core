@@ -1,0 +1,6 @@
+[nordicenergy-prod]
+name=Production Packages - $basearch
+baseurl=http://pub.nordicenergy.net.s3.amazonaws.com/release/package/yum/$basearch/
+enabled=1
+gpgkey=https://raw.githubusercontent.com/nordicenergy/nordicenergy-open/master/nordicenergy-release/nordicenergy-pub.key
+gpgcheck=1
