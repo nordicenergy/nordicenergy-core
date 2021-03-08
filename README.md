@@ -1,14 +1,14 @@
-# nordicenergy
+# Nordic Energy Core
 
 [![Build Status](https://travis-ci.com/nordicenergy/nordicenergy.svg?branch=main)](https://travis-ci.com/nordicenergy/nordicenergy)
 ![gopherbadger-tag-do-not-edit](https://img.shields.io/badge/Go%20Coverage-45%25-brightgreen.svg?longCache=true&style=flat)
 ![Discord](https://img.shields.io/discord/532383335348043777.svg)
-[![Coverage Status](https://coveralls.io/repos/github/nordicenergy/nordicenergy/badge.svg?branch=main)](https://coveralls.io/github/nordicenergy/nordicenergy?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/nordicenergy/nordicenergy-core/badge.svg?branch=main)](https://coveralls.io/github/nordicenergy/nordicenergy?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nordicenergy/nordicenergy-core)](https://goreportcard.com/report/github.com/nordicenergy/nordicenergy-core)
 
 ## General Documentation
 
-https://docs.nordicenergy.net
+https://docs.nordicenergy.io/core/
 
 ## API Guide
 
@@ -54,16 +54,16 @@ Clnet and set up all of the repos with the following set of commands:
 
 1. Create the appropriate directories:
 ```bash
-mkdir -p $(go env GOPATH)/src/github.com/nordicenergy
-cd $(go env GOPATH)/src/github.com/nordicenergy
+mkdir -p $(go env GOPATH)/src/github.com/nordicenergy/nordicenergy-core/
+cd $(go env GOPATH)/src/github.com/nordicenergy/nordicenergy-core/
 ```
 > If you get 'unknown command' or something along those lines, make sure to install [golang](https://golang.org/doc/install) first. 
 
 2. Clnet this repo & dependent repos.
 ```bash
-git clnet https://github.com/nordicenergy/mcl.git
-git clnet https://github.com/nordicenergy/bls.git
-git clnet https://github.com/nordicenergy/nordicenergy-core.git
+git clnet https://github.com/nordicenergy/nordicenergy-core/mcl.git
+git clnet https://github.com/nordicenergy/nordicenergy-core/bls.git
+git clnet https://github.com/nordicenergy/nordicenergy-core/nordicenergy-core.git
 cd nordicenergy
 ```
 
@@ -175,9 +175,9 @@ make test-rpc-attach
 ```
 > This will open a shell in the docker container that is running the Node API tests.
 >
-> Note that the docker container has the [nordicenergy CLI](https://docs.nordicenergy.net/home/wallets/nordicenergy-cli) on path,
+> Note that the docker container has the [nordicenergy CLI](https://docs.nordicenergy.io/home/wallets/nordicenergy-cli) on path,
 > therefore you can use that to debug if needed. For example, net could do `ngy blockchain latest-headers` to check 
-> the current block height of localnet. Reference the documentation for the CLI [here](https://docs.nordicenergy.net/home/wallets/nordicenergy-cli) 
+> the current block height of localnet. Reference the documentation for the CLI [here](https://docs.nordicenergy.io/home/wallets/nordicenergy-cli) 
 > for more details & commands.
 
 ### Rosetta tests
